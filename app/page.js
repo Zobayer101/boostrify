@@ -37,9 +37,24 @@ export default function Home() {
           <h2 className="chooseNetwork">Choose social network</h2>
         </div>
         <div className="AllNetwork">
-          <div className="fastline"></div>
-          <div className="scoundline"></div>
-          <div className="thardline"></div>
+          <div className="fastline">
+            <div className="youtube box">youtube</div>
+            <div className="x box">X.com</div>
+            <div className="likee box">Likee</div>
+            <div className="tiktok box">tiktok</div>
+          </div>
+          <div className="scoundline">
+            <div className="Raddit box">Raddit</div>
+            <div className="facebook box">facebook</div>
+            <div className="instagram box">instagram</div>
+            <div className="spotify box">spotify</div>
+          </div>
+          <div className="thardline">
+            <div className="pintarest box">pintarast</div>
+            <div className="talegram box">talegram</div>
+            <div className="whatsup box">whatsup</div>
+            <div className="vk box">vk</div>
+          </div>
         </div>
       </div>
 

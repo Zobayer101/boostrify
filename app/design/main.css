@@ -28,7 +28,7 @@
   padding-top: 70px;
   width: 100%;
   height: 100vh;
-  background: #c6c5cafb;
+  background: #e4e4e4fb;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -73,12 +73,14 @@
 
 .Service {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background: #f7ffff6e;
 }
 .serviceText {
+  margin: 10px 0 10px 0;
   width: 100%;
-  height: 60px;
+  font-size: 30px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,24 +92,58 @@
 .AllNetwork {
   width: 100%;
   background: #ffffff;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
+  justify-content: center;
 }
 .fastline,
 .scoundline,
 .thardline {
   width: 33%;
-  height: 90%;
+  height: 400px;
   /* background: #000; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
+.box {
+  padding: 5px 5px 5px 20px;
+  width: 80%;
+  height: 50px;
+  background: #eeeaf7;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.box:hover {
+  background-color: #a2a0a3;
+}
+@media screen and (max-width: 750px) {
+  .Service {
+    height: 140vh;
+  }
+  .AllNetwork {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fastline,
+  .scoundline,
+  .thardline {
+    height: 240px;
+    width: 100%;
+  }
+}
 .AboutUs {
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   background: #b86bb8;
 }
-.footer {
+.Footer {
   width: 100%;
-  height: 100vh;
-  background: #85599e;
+  height: 40vh;
+  background: #5d5a5f;
 }
