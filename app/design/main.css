@@ -2,7 +2,7 @@
   padding: 0 10px 0 10px;
   width: 100%;
   height: 70px;
-  background: #ffffff6c;
+  background: #69776b96;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -14,11 +14,44 @@
   width: 200px;
   position: relative;
 }
+.LogBtn {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  border: 1px solid rgb(73, 41, 255);
+  background: #d6d5d5cc;
+  align-items: center;
+  border-radius: 25px;
+  justify-content: space-between;
+}
+.Singup {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  width: 50%;
+  font-size: 17;
+  cursor: pointer;
+  height: 100%;
+  background: rgb(134, 86, 245);
+  border-radius: 25px;
+  justify-content: center;
+}
+.Login {
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3b3838;
+}
 .profile {
   display: flex;
   align-items: center;
+
   height: 100%;
-  width: 100px;
+  width: 150px;
 }
 .profile .IMG {
   border-radius: 50%;
@@ -28,7 +61,7 @@
   padding-top: 70px;
   width: 100%;
   height: 100vh;
-  background: #e4e4e4fb;
+  background: #f0f0d8fb;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -107,23 +140,26 @@
   align-items: center;
 }
 .box {
-  padding: 5px 5px 5px 20px;
+  padding: 5px 5px 5px 10px;
   width: 80%;
-  height: 50px;
+  height: 60px;
   background: #eeeaf7;
-  margin-top: 10px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   cursor: pointer;
   border-radius: 5px;
   transition: 0.3s;
+  color: #5e5d5d;
+  font-weight: 500;
+  box-shadow: 2px 5px 10px gray;
 }
 .box:hover {
   background-color: #a2a0a3;
 }
 @media screen and (max-width: 750px) {
   .Service {
-    height: 140vh;
+    height: 160vh;
   }
   .AllNetwork {
     flex-direction: column;
@@ -133,17 +169,76 @@
   .fastline,
   .scoundline,
   .thardline {
-    height: 240px;
+    height: 290px;
     width: 100%;
+  }
+  .box {
+    margin-top: 10px;
+    height: 60px;
   }
 }
 .AboutUs {
   width: 100%;
-  height: 60vh;
-  background: #b86bb8;
+  height: 90vh;
+  background: #f0efef;
+}
+.TextSection {
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h3 {
+  font-size: 30px;
+  color: #5e5d5d;
+  text-align: center;
+  padding: 5px;
+}
+.Paraabout {
+  color: #444343;
+  padding: 10px;
+}
+.aboutCover {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.imageSection {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 750px) {
+  .aboutCover {
+    flex-direction: column;
+  }
+  .TextSection {
+    width: 100%;
+  }
+  .AboutUs {
+    height: 120vh;
+  }
 }
 .Footer {
   width: 100%;
-  height: 40vh;
-  background: #5d5a5f;
+  height: 20vh;
+  background: #f0edf1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.privace {
+  color: #3f3030;
+  padding: 10px;
+}
+.copyright {
+  padding: 10px;
+  color: #706c6c;
 }
