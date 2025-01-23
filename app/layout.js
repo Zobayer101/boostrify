@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Boostrify",
-  description: "Socilmedia markater",
+  description: "Best Free SMM Panel",
 };
 
 export default function RootLayout({ children }) {

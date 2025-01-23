@@ -1,5 +1,8 @@
+import Navbar from "../Components/Navbar";
+import "../design/Navbar.css";
+
 const profile = () => {
-  return <div>This is a Profile page!</div>;
+  return <div className="Profile"><Navbar/></div>;
 };
 
 export default profile;

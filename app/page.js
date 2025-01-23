@@ -1,7 +1,7 @@
 import "./design/main.css";
 import Image from "next/image";
-import logo from "./Image/boostrify.png";
-import nophoto from "./Image/Nophoto.png";
+// import logo from "./Image/boostrify.png";
+// import nophoto from "./Image/Nophoto.png";
 import Graphy from "./Image/graphys.png";
 import AboutPhoto from "./Image/aboutus.png";
 import youtube from "./Icon/youtube-Photoroom.png";
@@ -16,27 +16,15 @@ import pintarast from "./Icon/pintarast-Photoroom.png";
 import Talegram from "./Icon/talegram-Photoroom.png";
 import Whatapp from "./Icon/whatsup-Photoroom.png";
 import Vk from "./Icon/vk-Photoroom.png";
+import Link from "next/link";
+import Navbar from "./Components/Navbar";
 
 export default function Home() {
-  const status = false;
+ 
   return (
     <div className="mainpage">
-      <div className="navbar">
-        <div className="logo">
-          <Image src={logo} alt="boostrify" width={170} />
-        </div>
-        {/* <div className="Section"></div> */}
-        <div className="profile">
-          {status ? (
-            <Image src={nophoto} alt="profile" width={50} className="IMG" />
-          ) : (
-            <div className="LogBtn">
-              <div className="Login">Login</div>{" "}
-              <div className="Singup">Singup</div>
-            </div>
-          )}
-        </div>
-      </div>
+      <Navbar />
+
       <div className="view">
         <div className="fistContent">
           <h2 className="HT">Best Free SMM Panel ever</h2>
@@ -59,54 +47,78 @@ export default function Home() {
         </div>
         <div className="AllNetwork">
           <div className="fastline">
-            <div className="youtube box">
-              {" "}
-              <Image src={youtube} alt="youtube Icon" width={70} />
-              youtube
-            </div>
-            <div className="x box">
-              {" "}
-              <Image src={twitter} alt="twitter" width={70} />
-              X.com
-            </div>
-            <div className="likee box">
-              <Image src={Likee} alt="Likee" width={70} />
-              Likee
-            </div>
-            <div className="tiktok box">
-              <Image src={Tiktok} alt="Tiktok" width={55} /> tiktok
-            </div>
+            <Link href={"/youtube"}>
+              <div className="youtube box">
+                {" "}
+                <Image src={youtube} alt="youtube Icon" width={70} />
+                Youtube
+              </div>
+            </Link>
+            <Link href={"/xcom"}>
+              <div className="x box">
+                {" "}
+                <Image src={twitter} alt="twitter" width={70} />
+                X.com
+              </div>
+            </Link>
+            <Link href={"/Likee"}>
+              <div className="likee box">
+                <Image src={Likee} alt="Likee" width={70} />
+                Likee
+              </div>
+            </Link>
+            <Link href={"/Tiktok"}>
+              <div className="tiktok box">
+                <Image src={Tiktok} alt="Tiktok" width={55} /> Tiktok
+              </div>
+            </Link>
           </div>
           <div className="scoundline">
-            <div className="Raddit box">
-              {" "}
-              <Image src={Raddit} alt="Raddit" width={55} />
-              Raddit
-            </div>
-            <div className="facebook box">
-              <Image src={faceBook} alt="facebook" width={55} /> facebook
-            </div>
-            <div className="instagram box">
-              <Image src={Instagram} alt="Instagram" width={70} /> instagram
-            </div>
-            <div className="spotify box">
-              <Image src={Sphotify} alt="Sphotify" width={70} /> spotify
-            </div>
+            <Link href={"/Reddit"}>
+              <div className="Raddit box">
+                {" "}
+                <Image src={Raddit} alt="Raddit" width={55} />
+                Reddit
+              </div>
+            </Link>
+            <Link href={"/Facebook"}>
+              <div className="facebook box">
+                <Image src={faceBook} alt="facebook" width={55} /> Facebook
+              </div>
+            </Link>
+            <Link href={"/Instagram"}>
+              <div className="instagram box">
+                <Image src={Instagram} alt="Instagram" width={70} /> Instagram
+              </div>
+            </Link>
+            <Link href={"/Spotify"}>
+              <div className="spotify box">
+                <Image src={Sphotify} alt="Sphotify" width={70} /> Spotify
+              </div>
+            </Link>
           </div>
           <div className="thardline">
-            <div className="pintarest box">
-              <Image src={pintarast} alt="pintarast" width={70} /> pintarast
-            </div>
-            <div className="talegram box">
-              <Image src={Talegram} alt="talegram" width={70} /> talegram
-            </div>
-            <div className="whatsup box">
-              {" "}
-              <Image src={Whatapp} alt="whtsapp" width={65} /> whatsup
-            </div>
-            <div className="vk box">
-              <Image src={Vk} alt="vk" width={85} /> vk
-            </div>
+            <Link href={"/Pintarast"}>
+              <div className="pintarest box">
+                <Image src={pintarast} alt="pintarast" width={70} /> Pintarast
+              </div>
+            </Link>
+            <Link href={"/Talegram"}>
+              <div className="talegram box">
+                <Image src={Talegram} alt="talegram" width={70} /> Talegram
+              </div>
+            </Link>
+            <Link href={"/Whatsup"}>
+              <div className="whatsup box">
+                {" "}
+                <Image src={Whatapp} alt="whtsapp" width={65} /> Whatsup
+              </div>
+            </Link>
+            <Link href={"/Vk"}>
+              <div className="vk box">
+                <Image src={Vk} alt="vk" width={85} /> Vk
+              </div>
+            </Link>
           </div>
         </div>
       </div>
