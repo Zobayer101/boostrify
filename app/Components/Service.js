@@ -4,6 +4,7 @@ import Follows from "../Icon/ReadFollow.png";
 import subscrib from "../Icon/subscrib.png";
 import youtubeShear from "../Icon/shareyoutube.png";
 import YoutubeComment from "../Icon/commentyoutube.png";
+import Link from "next/link";
 
 const Services = ({ props }) => {
   return (
@@ -66,7 +67,10 @@ const Services = ({ props }) => {
       </div> */}
       <div className="NextCollum">
         <div className="Textaction">Total Price 25$</div>
-        <div className="saveBtn">Free Now</div>
+
+        <div className="saveBtn">
+          <Link href={"/profile"}>Free Now</Link>
+        </div>
       </div>
     </div>
   );

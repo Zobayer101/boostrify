@@ -17,14 +17,59 @@ import Talegram from "./Icon/talegram-Photoroom.png";
 import Whatapp from "./Icon/whatsup-Photoroom.png";
 import Vk from "./Icon/vk-Photoroom.png";
 import Link from "next/link";
-import Navbar from "./Components/Navbar";
+// import Navbar from "./Components/Navbar";
+import logo from "./Image/boostrify.png";
+import nophoto from "./Image/Nophoto.png";
+import "./design/Navbar.css";
+import Createaccount from "./Components/Createaccount";
 
 export default function Home() {
- 
+  const status = false;
   return (
     <div className="mainpage">
-      <Navbar />
+      {/* <Navbar /> */}
+      <div className="navbar">
+        <div className="logo">
+          <Image src={logo} alt="boostrify" width={170} />
+        </div>
+        {/* <div className="Section"></div> */}
+        <div className="profile">
+          {status ? (
+            <Image src={nophoto} alt="profile" width={50} className="IMG" />
+          ) : (
+            <div className="LogBtn">
+              <Link href={"/Login"}>
+                <div className="Login">Login</div>{" "}
+              </Link>
+              <Link href={"/Signup"}>
+                <div className="Singup">Singup</div>
+              </Link>
+            </div>
+          )}
+        </div>
+      </div>
+      <Createaccount />
+      {/* <div className="OuterModal">
+        <div className="Modelpage">
+          <div className="ModalStart">
+            <div className="Header">
+              <Image src={logo} alt="logoPhoto" width={220} />
+            </div>
 
+            <div className="LoginSection">
+              <input type="email" placeholder="email" className="email" />
+              <input type="password" placeholder="password" className="email" />
+              <div className="btnSection">
+                <div className="remember">
+                  <input type="checkbox" className="checkbox" />
+                  remember me
+                </div>
+                <div className="submitbtn">Login</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
       <div className="view">
         <div className="fistContent">
           <h2 className="HT">Best Free SMM Panel ever</h2>

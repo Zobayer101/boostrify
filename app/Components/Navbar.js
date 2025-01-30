@@ -2,6 +2,7 @@ import logo from "../Image/boostrify.png";
 import nophoto from "../Image/Nophoto.png";
 import Image from "next/image";
 import "../design/Navbar.css";
+import Link from "next/link";
 const status = false;
 const Navbar = () => {
   return (
@@ -15,8 +16,12 @@ const Navbar = () => {
           <Image src={nophoto} alt="profile" width={50} className="IMG" />
         ) : (
           <div className="LogBtn">
-            <div className="Login">Login</div>{" "}
-            <div className="Singup">Singup</div>
+            <Link href={"/Login"}>
+              <div className="Login">Login</div>{" "}
+            </Link>
+            <Link href={"/Signup"}>
+              <div className="Singup">Singup</div>
+            </Link>
           </div>
         )}
       </div>
