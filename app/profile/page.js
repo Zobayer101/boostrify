@@ -2,7 +2,13 @@ import "../design/Profile.css";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../Image/boostrify.png";
-import noPhoto from "../Image/Nophoto.png";
+import noPhoto from "../Icon/Bost-Photoroom.png";
+import taskImg from "../Icon/TaskImg.png";
+import MoneyImg from "../Icon/Balence.png";
+import CoinsImg from "../Icon/Coins.png";
+import EarnImg from "../Icon/Earn.png";
+import GoldCoinImg from "../Icon/GoldCoine.png";
+import UploadImg from "../Icon/UploadsImg.png";
 const profile = () => {
   return (
     <div className="ProfilePage">
@@ -22,23 +28,153 @@ const profile = () => {
             <Image src={noPhoto} alt="noPhoto" width={50} className="ims" />
             <div className="Names">my Name</div>
           </div>
-          <div className="Balence">Total balence: 0$</div>
-          <div className="Coine">Total Coine: 20</div>
-        </div>
-        <div className="SocundSection">
-          <div className="Bar">
-            <div className="Fill"></div>
+          <div className="Balence">
+            <div className="yourMoney">
+              <Image src={MoneyImg} alt="Blance Img" width={50} /> 0 $
+            </div>
+          </div>
+          <div className="Coine">
+            <div className="CoinsImg">
+              <Image src={CoinsImg} alt="Coines" width={50} />
+              20
+            </div>
           </div>
         </div>
+        <div className="SocundSection"></div>
         <div className="ThardSection">
-          <div className="Task">Earn coine with complite the task.</div>
+          <div className="Task">
+            <Image src={EarnImg} alt="Earnimg" width={50} />
+            Earn coine{" "}
+          </div>
         </div>
       </div>
       <div className="taskSection">
-        <div className="taskOne"></div>
-        <div className="taskOne"></div>
-        <div className="taskOne"></div>
-        <div className="taskOne"></div>
+        <div className="taskOne">
+          <div className="numbers">
+            <Image src={taskImg} alt="task" width={80} />
+          </div>
+          <div className="discription"> Create a acttive account </div>
+          <div className="Create">
+            <Image src={GoldCoinImg} alt="goldImag" width={40} /> 20
+          </div>
+          <div className="screenshort">
+            {" "}
+            <div className="accountcreate" title="Create active account">
+              create
+            </div>
+            <div className="uploadSection" title="upload screenshort">
+              <Image src={UploadImg} alt="upload" width={50} />
+            </div>
+          </div>
+        </div>
+        <div className="taskOne">
+          <div className="numbers">
+            <Image src={taskImg} alt="task" width={80} />
+          </div>
+          <div className="discription"> Create a acttive account </div>
+          <div className="Create">
+            <Image src={GoldCoinImg} alt="goldImag" width={40} /> 20
+          </div>
+          <div className="screenshort">
+            {" "}
+            <div className="accountcreate" title="Create active account">
+              create
+            </div>
+            <div className="uploadSection" title="upload screenshort">
+              <Image src={UploadImg} alt="upload" width={50} />
+            </div>
+          </div>
+        </div>
+        <div className="taskOne">
+          <div className="numbers">
+            <Image src={taskImg} alt="task" width={80} />
+          </div>
+          <div className="discription"> Create a acttive account </div>
+          <div className="Create">
+            <Image src={GoldCoinImg} alt="goldImag" width={40} /> 20
+          </div>
+          <div className="screenshort">
+            {" "}
+            <div className="accountcreate" title="Create active account">
+              create
+            </div>
+            <div className="uploadSection" title="upload screenshort">
+              <Image src={UploadImg} alt="upload" width={50} />
+            </div>
+          </div>
+        </div>
+        <div className="taskOne">
+          <div className="numbers">
+            <Image src={taskImg} alt="task" width={80} />
+          </div>
+          <div className="discription"> Create a acttive account </div>
+          <div className="Create">
+            <Image src={GoldCoinImg} alt="goldImag" width={40} /> 20
+          </div>
+          <div className="screenshort">
+            {" "}
+            <div className="accountcreate" title="Create active account">
+              create
+            </div>
+            <div className="uploadSection" title="upload screenshort">
+              <Image src={UploadImg} alt="upload" width={50} />
+            </div>
+          </div>
+        </div>
+        <div className="taskOne">
+          <div className="numbers">
+            <Image src={taskImg} alt="task" width={80} />
+          </div>
+          <div className="discription"> Create a acttive account </div>
+          <div className="Create">
+            <Image src={GoldCoinImg} alt="goldImag" width={40} /> 20
+          </div>
+          <div className="screenshort">
+            {" "}
+            <div className="accountcreate" title="Create active account">
+              create
+            </div>
+            <div className="uploadSection" title="upload screenshort">
+              <Image src={UploadImg} alt="upload" width={50} />
+            </div>
+          </div>
+        </div>
+        <div className="taskOne">
+          <div className="numbers">
+            <Image src={taskImg} alt="task" width={80} />
+          </div>
+          <div className="discription"> Create a acttive account </div>
+          <div className="Create">
+            <Image src={GoldCoinImg} alt="goldImag" width={40} /> 20
+          </div>
+          <div className="screenshort">
+            {" "}
+            <div className="accountcreate" title="Create active account">
+              create
+            </div>
+            <div className="uploadSection" title="upload screenshort">
+              <Image src={UploadImg} alt="upload" width={50} />
+            </div>
+          </div>
+        </div>
+        <div className="taskOne">
+          <div className="numbers">
+            <Image src={taskImg} alt="task" width={80} />
+          </div>
+          <div className="discription"> Create a acttive account </div>
+          <div className="Create">
+            <Image src={GoldCoinImg} alt="goldImag" width={40} /> 20
+          </div>
+          <div className="screenshort">
+            {" "}
+            <div className="accountcreate" title="Create active account">
+              create
+            </div>
+            <div className="uploadSection" title="upload screenshort">
+              <Image src={UploadImg} alt="upload" width={50} />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

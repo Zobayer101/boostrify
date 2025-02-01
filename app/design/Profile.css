@@ -35,13 +35,13 @@
 .ProfileInfo {
   width: 100%;
   padding-top: 50px;
-  height: 80vh;
-  background: #d8d7d8;
+  height: 80%;
+  background: #f8f7f8;
 }
 .fastProfilesection {
   width: 100%;
   height: 300px;
-
+  /* flex-direction: column; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,12 +50,15 @@
   width: 200px;
   display: flex;
   flex-direction: column;
-  height: 100px;
+  height: 130px;
   align-items: center;
   justify-content: space-around;
 }
 .ims {
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
+  border: 1px solid rgb(0, 119, 89);
 }
 .Names {
   color: #464545;
@@ -66,33 +69,26 @@
 .Coine {
   width: 200px;
   height: 100px;
-  color: #363636;
-  font-size: 20px;
-  font-weight: 600;
+}
+.CoinsImg,
+.yourMoney {
+  width: 150px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.SocundSection {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
+  gap: 10px;
+  font-size: 22px;
   height: 50px;
+  font-weight: 700;
+  color: #010303;
+  box-shadow: 2px 7px 10px rgb(179, 178, 178);
+  background: #d6cf8f;
 }
-.Bar {
-  width: 700px;
-  height: 10px;
-  border: 1px solid #0fc;
+.yourMoney {
+  background: #bff7c2;
+}
 
-  border-radius: 10px;
-}
-.Fill {
-  height: 100%;
-  background-color: #f0c;
-  width: 40%;
-  border-radius: 10px 0 0 10px;
-}
 .ThardSection {
   width: 100%;
   height: 100px;
@@ -101,11 +97,114 @@
   justify-content: center;
 }
 .Task {
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 25px;
+  font-weight: 600;
+  color: #647a12;
+  font-weight: 600;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #d1d1d1;
 }
 .taskSection {
   width: 100%;
   height: 100vh;
-  
+}
+
+.taskOne {
+  padding: 0 5px 0 5px;
+  height: 60px;
+  width: 100%;
+  background: #d8e2da;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 1px 2px 10px gray;
+  margin-top: 20px;
+}
+.numbers {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Create {
+  font-size: 18px;
+  font-weight: 600;
+  color: #494848;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.discription {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.screenshort {
+  width: 250px;
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-evenly;
+}
+.accountcreate,
+.uploadSection {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgb(227, 238, 236);
+  background: #5e4ab6;
+}
+.accountcreate {
+  background: #0eb124;
+}
+@media screen and (max-width: 700px) {
+  .fastProfilesection {
+    height: 400px;
+    flex-direction: column;
+  }
+  .profileImage {
+    width: 80%;
+  }
+  .Balence,
+  .Coine {
+    padding-top: 30px;
+    width: 100%;
+    height: 100px;
+  }
+  .CoinsImg,
+  .yourMoney {
+    width: 50%;
+    margin: auto;
+  }
+  .screenshort {
+    width: 170px;
+    flex-direction: column;
+  }
+  .accountcreate,
+  .uploadSection {
+    font-size: 15px;
+    height: 20px;
+  }
+  .discription {
+    font-size: 15px;
+  }
 }

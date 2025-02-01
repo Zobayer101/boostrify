@@ -1,6 +1,6 @@
 import "./design/main.css";
 import Image from "next/image";
-// import logo from "./Image/boostrify.png";
+
 // import nophoto from "./Image/Nophoto.png";
 import Graphy from "./Image/graphys.png";
 import AboutPhoto from "./Image/aboutus.png";
@@ -21,7 +21,7 @@ import Link from "next/link";
 import logo from "./Image/boostrify.png";
 import nophoto from "./Image/Nophoto.png";
 import "./design/Navbar.css";
-import Createaccount from "./Components/Createaccount";
+//import Createaccount from "./Components/Createaccount";
 
 export default function Home() {
   const status = false;
@@ -38,38 +38,17 @@ export default function Home() {
             <Image src={nophoto} alt="profile" width={50} className="IMG" />
           ) : (
             <div className="LogBtn">
-              <Link href={"/Login"}>
-                <div className="Login">Login</div>{" "}
-              </Link>
-              <Link href={"/Signup"}>
-                <div className="Singup">Singup</div>
-              </Link>
+              <div className="Login">
+                <Link href={"/Login"}>Login</Link>
+              </div>{" "}
+              <div className="Singup">
+                <Link href={"/Signup"}>Signup</Link>
+              </div>
             </div>
           )}
         </div>
       </div>
-      <Createaccount />
-      {/* <div className="OuterModal">
-        <div className="Modelpage">
-          <div className="ModalStart">
-            <div className="Header">
-              <Image src={logo} alt="logoPhoto" width={220} />
-            </div>
 
-            <div className="LoginSection">
-              <input type="email" placeholder="email" className="email" />
-              <input type="password" placeholder="password" className="email" />
-              <div className="btnSection">
-                <div className="remember">
-                  <input type="checkbox" className="checkbox" />
-                  remember me
-                </div>
-                <div className="submitbtn">Login</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <div className="view">
         <div className="fistContent">
           <h2 className="HT">Best Free SMM Panel ever</h2>
