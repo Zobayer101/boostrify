@@ -30,7 +30,7 @@ const Tiktok = () => {
           </p>
         </div>
       </div>
-      <Services />
+      <Services props={"follow"} />
     </div>
   );
 };

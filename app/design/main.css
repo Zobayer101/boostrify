@@ -194,6 +194,11 @@ h3 {
 .privace {
   color: #3f3030;
   padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.privace:hover {
+  color: #49409c;
 }
 .copyright {
   padding: 10px;

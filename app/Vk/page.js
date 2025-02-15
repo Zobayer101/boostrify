@@ -30,7 +30,7 @@ const Vk = () => {
           </p>
         </div>
       </div>
-      <Services />
+      <Services props={"follow"} />
     </div>
   );
 };

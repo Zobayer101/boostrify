@@ -18,37 +18,16 @@ import Whatapp from "./Icon/whatsup-Photoroom.png";
 import Vk from "./Icon/vk-Photoroom.png";
 import Link from "next/link";
 // import Navbar from "./Components/Navbar";
-import logo from "./Image/boostrify.png";
-import nophoto from "./Image/Nophoto.png";
+
 import "./design/Navbar.css";
+import Navbar from "./Components/Navbar";
 //import Createaccount from "./Components/Createaccount";
 
 export default function Home() {
-  const status = false;
   return (
     <div className="mainpage">
       {/* <Navbar /> */}
-      <div className="navbar">
-        <div className="logo">
-          <Image src={logo} alt="boostrify" width={170} />
-        </div>
-        {/* <div className="Section"></div> */}
-        <div className="profile">
-          {status ? (
-            <Image src={nophoto} alt="profile" width={50} className="IMG" />
-          ) : (
-            <div className="LogBtn">
-              <div className="Login">
-                <Link href={"/Login"}>Login</Link>
-              </div>{" "}
-              <div className="Singup">
-                <Link href={"/Signup"}>Signup</Link>
-              </div>
-            </div>
-          )}
-        </div>
-      </div>
-
+      <Navbar />
       <div className="view">
         <div className="fistContent">
           <h2 className="HT">Best Free SMM Panel ever</h2>

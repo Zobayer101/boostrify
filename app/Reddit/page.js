@@ -30,7 +30,7 @@ const Reddit = () => {
           </p>
         </div>
       </div>
-      <Services />
+      <Services props={"follow"} />
     </div>
   );
 };

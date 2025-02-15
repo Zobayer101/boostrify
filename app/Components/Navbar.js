@@ -1,9 +1,11 @@
+"use client";
 import logo from "../Image/boostrify.png";
-import nophoto from "../Image/Nophoto.png";
+
+import noPhoto from "../Icon/Bost-Photoroom.png";
 import Image from "next/image";
 import "../design/Navbar.css";
 import Link from "next/link";
-const status = false;
+const status = localStorage.getItem("token");
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -13,7 +15,7 @@ const Navbar = () => {
       {/* <div className="Section"></div> */}
       <div className="profile">
         {status ? (
-          <Image src={nophoto} alt="profile" width={50} className="IMG" />
+          <Image src={noPhoto} alt="profile" width={50} className="IMG" />
         ) : (
           <div className="LogBtn">
             <Link href={"/Login"}>

@@ -1,3 +1,5 @@
+"use client";
+
 import "../design/Profile.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,7 +11,17 @@ import CoinsImg from "../Icon/Coins.png";
 import EarnImg from "../Icon/Earn.png";
 import GoldCoinImg from "../Icon/GoldCoine.png";
 import UploadImg from "../Icon/UploadsImg.png";
-const profile = () => {
+
+import { redirect } from "next/navigation";
+
+const Profile = () => {
+  const local = localStorage.getItem("token");
+  const UserName = localStorage.getItem("user");
+  const user = JSON.parse(UserName);
+  console.log(user.fullname);
+  if (!local) {
+    return redirect("/Signup");
+  }
   return (
     <div className="ProfilePage">
       <div className="PageHeader">
@@ -26,7 +38,7 @@ const profile = () => {
         <div className="fastProfilesection">
           <div className="profileImage">
             <Image src={noPhoto} alt="noPhoto" width={50} className="ims" />
-            <div className="Names">my Name</div>
+            <div className="Names">{user.fullname || "my Name"}</div>
           </div>
           <div className="Balence">
             <div className="yourMoney">
@@ -180,4 +192,4 @@ const profile = () => {
   );
 };
 
-export default profile;
+export default Profile;
